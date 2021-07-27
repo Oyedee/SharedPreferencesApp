@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SharedPreferencesApp</string>
+    <string name="is_checked">The CheckBox is Checked</string>
+    <string name="is_not_checked">The CheckBox is not Checked</string>
+</resources>
