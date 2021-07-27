@@ -2,6 +2,7 @@ package com.example.sharedpreferencesapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.CheckBox;
@@ -22,10 +23,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if(isChecked) {
-                    checkBox.setText("This CheckBox is checked");
-                } else {
-                    checkBox.setText("This CheckBox is not checked");
+                    Intent intent = new Intent(MainActivity.this, SharedPreferenceTwo.class);
+                    startActivity(intent);
                 }
+//                else {
+//                    checkBox.setText("This CheckBox is not checked");
+//                }
             }
         });
     }
